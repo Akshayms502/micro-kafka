@@ -1,0 +1,15 @@
+package com.kafka.service;
+
+import org.apache.kafka.clients.consumer.ConsumerRecord;
+import org.springframework.kafka.annotation.KafkaListener;
+import org.springframework.stereotype.Service;
+
+@Service
+public class KafkaReceiver {
+	
+	@KafkaListener(topics = "sample")
+    public void receiveTopic1(ConsumerRecord<?, ?> consumerRecord) {
+        System.out.println("Receiver on topic1: "+consumerRecord.toString());
+    }
+
+}

@@ -1,6 +1,4 @@
-spring:
-  application:
-    name: config-server-client
+
 server:
   port: 9095
 eureka:

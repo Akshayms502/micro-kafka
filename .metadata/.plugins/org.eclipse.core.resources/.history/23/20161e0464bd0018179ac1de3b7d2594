@@ -1,0 +1,23 @@
+package com.kafka.service;
+
+import java.util.Arrays;
+
+import org.apache.kafka.clients.consumer.ConsumerRecord;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.mongodb.core.MongoTemplate;
+import org.springframework.kafka.annotation.KafkaListener;
+import org.springframework.stereotype.Service;
+
+@Service
+public class KafkaReceiver {
+	
+	@Autowired
+	MongoTemplate mongoTemplate;
+	
+	@KafkaListener(topics = "sample")
+    public void receiveTopic1(ConsumerRecord<?, ?> consumerRecord) {
+        System.out.println("Receiver on topic1: "+consumerRecord.value());
+        mongoTemplate.save(consumerRecord.value());
+    }
+
+}
