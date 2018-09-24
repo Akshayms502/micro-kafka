@@ -5071,3 +5071,46 @@
 2018-09-24 19:41:34,314 [Worker-110] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/akshay.ms/Documents/workspace/SparksBasics/src/main/resources
 2018-09-24 19:41:34,315 [Worker-110] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 2018-09-24 19:41:34,316 [Worker-110] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/akshay.ms/Documents/workspace/SparksBasics/src/test/resources
+2018-09-24 19:50:59,284 [Worker-109] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-09-24 19:50:59,285 [Worker-109] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/akshay.ms/Documents/workspace/SparksBasics/src/main/resources
+2018-09-24 19:50:59,287 [Worker-109] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-09-24 19:50:59,287 [Worker-109] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/akshay.ms/Documents/workspace/SparksBasics/src/test/resources
+2018-09-24 19:51:57,503 [Worker-110] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-09-24 19:51:57,503 [Worker-110] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/akshay.ms/Documents/workspace/SparksBasics/src/main/resources
+2018-09-24 19:51:57,504 [Worker-110] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-09-24 19:51:57,505 [Worker-110] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/akshay.ms/Documents/workspace/SparksBasics/src/test/resources
+2018-09-24 19:52:56,361 [Worker-113] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-09-24 19:52:56,362 [Worker-113] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/akshay.ms/Documents/workspace/SparksBasics/src/main/resources
+2018-09-24 19:52:56,363 [Worker-113] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-09-24 19:52:56,364 [Worker-113] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/akshay.ms/Documents/workspace/SparksBasics/src/test/resources
+2018-09-24 19:53:21,678 [Worker-112] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-09-24 19:53:21,679 [Worker-112] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/akshay.ms/Documents/workspace/SparksBasics/src/main/resources
+2018-09-24 19:53:21,681 [Worker-112] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-09-24 19:53:21,681 [Worker-112] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/akshay.ms/Documents/workspace/SparksBasics/src/test/resources
+2018-09-24 19:55:26,471 [Worker-105] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-09-24 19:55:26,471 [Worker-105] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/akshay.ms/Documents/workspace/SparksBasics/src/main/resources
+2018-09-24 19:55:26,473 [Worker-105] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-09-24 19:55:26,474 [Worker-105] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/akshay.ms/Documents/workspace/SparksBasics/src/test/resources
+2018-09-24 19:59:57,075 [Worker-85] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/mongodb/mongo-java-driver/3.8.0/mongo-java-driver-3.8.0-sources.jar
+2018-09-24 19:59:59,187 [Worker-85] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/mongodb/mongo-java-driver/3.8.0/mongo-java-driver-3.8.0-sources.jar
+2018-09-24 19:59:59,265 [Worker-85] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.mongodb:mongo-java-driver:3.8.0
+2018-09-24 19:59:59,566 [Worker-109] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-09-24 19:59:59,567 [Worker-109] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/akshay.ms/Documents/workspace/SparksBasics/src/main/resources
+2018-09-24 19:59:59,569 [Worker-109] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-09-24 19:59:59,570 [Worker-109] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/akshay.ms/Documents/workspace/SparksBasics/src/test/resources
+2018-09-24 20:00:55,806 [Worker-105] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-09-24 20:00:55,806 [Worker-105] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/akshay.ms/Documents/workspace/SparksBasics/src/main/resources
+2018-09-24 20:00:55,808 [Worker-105] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-09-24 20:00:55,809 [Worker-105] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/akshay.ms/Documents/workspace/SparksBasics/src/test/resources
+2018-09-24 20:01:06,536 [Worker-110] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-09-24 20:01:06,536 [Worker-110] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/akshay.ms/Documents/workspace/SparksBasics/src/main/resources
+2018-09-24 20:01:06,538 [Worker-110] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-09-24 20:01:06,539 [Worker-110] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/akshay.ms/Documents/workspace/SparksBasics/src/test/resources
+2018-09-24 20:02:44,923 [Worker-109] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-09-24 20:02:44,931 [Worker-109] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/akshay.ms/Documents/workspace/SparksBasics/src/main/resources
+2018-09-24 20:02:44,933 [Worker-109] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-09-24 20:02:44,940 [Worker-109] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/akshay.ms/Documents/workspace/SparksBasics/src/test/resources
+2018-09-24 20:04:00,968 [Worker-110] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-09-24 20:04:00,969 [Worker-110] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/akshay.ms/Documents/workspace/SparksBasics/src/main/resources
+2018-09-24 20:04:00,970 [Worker-110] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-09-24 20:04:00,971 [Worker-110] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/akshay.ms/Documents/workspace/SparksBasics/src/test/resources
