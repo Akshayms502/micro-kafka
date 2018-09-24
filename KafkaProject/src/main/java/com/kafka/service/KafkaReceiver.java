@@ -26,15 +26,9 @@ public class KafkaReceiver {
 	@KafkaListener(topics = "sample")
     public void receiveTopic1(ConsumerRecord<Student, Student> consumerRecord) {
         System.out.println("Receiver on topic1: "+consumerRecord.value());
-        for(ConsumerRecord<String, String> temp:consumerRecord){
-			System.out.println("key:"+temp.key()+",Value: "+
-					temp.value()+",partition:"+ temp.partition()+" "+
-					temp.topic()+",Time:"
-					);
-
-}
+       
         
-        kafkaDao.save(c);
+        kafkaDao.save(consumerRecord);
 	} 
 
 }
