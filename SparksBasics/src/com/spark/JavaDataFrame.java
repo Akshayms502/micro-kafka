@@ -3,6 +3,8 @@ package com.spark;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
 import org.apache.spark.sql.Dataset;
+import org.apache.spark.sql.Encoder;
+import org.apache.spark.sql.Encoders;
 import org.apache.spark.sql.Row;
 import org.apache.spark.sql.RowFactory;
 import org.apache.spark.sql.SparkSession;
@@ -29,7 +31,7 @@ public class JavaDataFrame {
 		val.show();
 		val.printSchema();
 		
-		Dataset<Row> val1=session.read().option("header", false).json("data/customer.json");
+		Dataset<Row> val1=session.read().option("header", false).option("inferSchema", true).json("data/customer.json");
 		val1.show();
 		System.out.println("-------------=========================");
 		val1.createOrReplaceTempView("myTable");  //creating temporary table and displaying results using spark sql
@@ -79,7 +81,7 @@ public class JavaDataFrame {
 		
 		
 		//getting data from mysql
-		Map<String,String> jdbcConnectionParams=new HashMap<String,String>();
+/*		Map<String,String> jdbcConnectionParams=new HashMap<String,String>();
 		jdbcConnectionParams.put("url", "jdbc:mysql://localhost:3306/spring");
 		jdbcConnectionParams.put("driver","com.mysql.jdbc.Driver");
 		jdbcConnectionParams.put("dbtable", "employee");
@@ -88,8 +90,18 @@ public class JavaDataFrame {
 		
 		Dataset<Row> sqlDataFields=session.read().format("jdbc").options(jdbcConnectionParams).load();
 		
-		sqlDataFields.show();
+		sqlDataFields.show(); */
 		
+		
+		//dataSets
+		Encoder<Department> encode=Encoders.bean(Department.class);
+		Dataset<Department> dep=session.createDataset(dept, encode);
+		dep.show();
+		
+		//converting dataframes to datasets
+		Encoder<Person> encoder=Encoders.bean(Person.class);
+		Dataset<Person> datsets=session.read().option("header", false).option("inferSchema", true).json("data/customer.json").as(encoder);
+		datsets.show();
 	}
 
 }

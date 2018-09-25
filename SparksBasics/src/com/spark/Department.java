@@ -1,6 +1,12 @@
 package com.spark;
 
-public class Department {
+import java.io.Serializable;
+
+public class Department implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 2806861437608849666L;
 	private int departmentId;
 	private String departmentName;
 	public int getDepartmentId() {
