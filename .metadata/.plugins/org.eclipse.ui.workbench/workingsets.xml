@@ -12,5 +12,8 @@
 <workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1537432329617_4" label="inventory_app" name="inventory_app">
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/inventory_app" type="4"/>
 </workingSet>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1537868878722_5" label="Kafka-Spark" name="Kafka-Spark">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Kafka-Spark" type="4"/>
+</workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1537251339585_0" label="Window Working Set" name="Aggregate for window 1537251339585"/>
 </workingSetManager>
