@@ -14,12 +14,18 @@ import org.apache.spark.streaming.api.java.JavaStreamingContext;
 import org.apache.spark.streaming.kafka010.ConsumerStrategies;
 import org.apache.spark.streaming.kafka010.KafkaUtils;
 import org.apache.spark.streaming.kafka010.LocationStrategies;
+import org.springframework.kafka.annotation.KafkaListener;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
+
 import scala.Tuple2;
 
 import java.util.*;
 
+
 public class SparkKafka10 {
-    public static void main(String[] argv) throws Exception{
+	
+    public static void main(String[] args) throws Exception{
 
         // Configure Spark to connect to Kafka running on local machine
         Map<String, Object> kafkaParams = new HashMap<>();
@@ -28,7 +34,7 @@ public class SparkKafka10 {
                         "org.apache.kafka.common.serialization.StringDeserializer");
         kafkaParams.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, 
                         "org.apache.kafka.common.serialization.StringDeserializer");
-        kafkaParams.put(ConsumerConfig.GROUP_ID_CONFIG,"group1");
+        kafkaParams.put(ConsumerConfig.GROUP_ID_CONFIG,"kafka-intro");
         kafkaParams.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG,"latest");
         kafkaParams.put(ConsumerConfig.ENABLE_AUTO_COMMIT_CONFIG,true);
 
@@ -38,7 +44,7 @@ public class SparkKafka10 {
         SparkConf conf = new SparkConf().setMaster("local[8]").setAppName("SparkKafka10WordCount");
 
         //Read messages in batch of 30 seconds
-        JavaStreamingContext jssc = new JavaStreamingContext(conf, Durations.seconds(30));
+        JavaStreamingContext jssc = new JavaStreamingContext(conf, Durations.seconds(10));
 
         // Start reading messages from Kafka and get DStream
         final JavaInputDStream<ConsumerRecord<String, String>> stream =
@@ -67,7 +73,7 @@ public class SparkKafka10 {
             public Tuple2<String, Integer> call(String word) throws Exception {
                 return new Tuple2<>(word,1);
             }
-        });
+        }); 
 
         // Count occurance of each word
         JavaPairDStream<String,Integer> wordCount = wordMap.reduceByKey(new Function2<Integer, Integer, Integer>() {
@@ -75,12 +81,17 @@ public class SparkKafka10 {
              public Integer call(Integer first, Integer second) throws Exception {
                  return first+second;
              }
-         });
+         }); 
 
         //Print the word count
+  //      wordCount.print();
+        
+        System.out.println("======================vvvvvvvvvvv==================================");
+        
+        lines.print();
         wordCount.print();
-
         jssc.start();
         jssc.awaitTermination();
+       
     }
 }
