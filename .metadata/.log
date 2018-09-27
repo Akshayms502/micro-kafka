@@ -2139,3 +2139,6 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: in comment 
 	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:595)
 	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:117)
 	... 26 more
+
+!ENTRY org.eclipse.jdt.ui 2 0 2018-09-27 18:05:10.861
+!MESSAGE The 'org.eclipse.recommenders.completion.rcp.javaCompletionProposalComputer.intelligent' proposal computer from the 'org.eclipse.recommenders.completion.rcp' plug-in did not complete normally. The extension took too long to return from the 'computeCompletionProposals()' operation.
