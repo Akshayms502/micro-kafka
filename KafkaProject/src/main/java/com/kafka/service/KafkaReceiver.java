@@ -1,20 +1,12 @@
 package com.kafka.service;
 
-import java.util.Arrays;
-
 import org.apache.kafka.clients.consumer.ConsumerRecord;
-import org.apache.kafka.common.requests.FetchResponse;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;
 
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
 import com.kafka.dao.KafkaDao;
 import com.kafka.model.Student;
-
-import ch.qos.logback.core.subst.Token.Type;
 
 @Service
 public class KafkaReceiver {
