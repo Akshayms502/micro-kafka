@@ -21,5 +21,8 @@
 <workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1538051664596_7" label="ZuulProxyServer" name="ZuulProxyServer">
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/ZuulProxyServer" type="4"/>
 </workingSet>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1538979004272_8" label="QutapApplication" name="QutapApplication">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/QutapApplication" type="4"/>
+</workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1537251339585_0" label="Window Working Set" name="Aggregate for window 1537251339585"/>
 </workingSetManager>
